@@ -74,7 +74,7 @@ Restart game to play again
 If you want to run this project locally:
 
 Step 1: Clone Repository
-git clone https://github.com/yourusername/guess-number-game.git
+git clone https://github.com/Leena-1/guess-number-game.git
 
 Step 2: Open Project Folder
 cd guess-number-game
