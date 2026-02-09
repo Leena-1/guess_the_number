@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #1e1e2f, #0b0b12);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    /* MAIN WRAPPER */
+    #wrapper {
+      width: 420px;
+      padding: 30px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(14px);
+      box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 14px;
+      color: #b8b8d0;
+      line-height: 1.4;
+    }
+
+    #guess {
+      text-align: center;
+      font-size: 38px;
+      margin: 26px 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    /* FORM */
+    .form {
+      margin-top: 10px;
+    }
+
+    .guessField {
+      width: 70%;
+      display: block;
+      margin: 0 auto 24px;
+      padding: 14px;
+      font-size: 18px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      color: #fff;
+      text-align: center;
+      outline: none;
+    }
+
+    .guessField::placeholder {
+      color: #8b8ba7;
+    }
+
+    .guessField:focus {
+      border-color: #5f7cff;
+      box-shadow: 0 0 12px rgba(95, 124, 255, 0.5);
+    }
+
+    .guesssubmit {
+      display: block;
+      margin: 0 auto;
+      padding: 14px 38px;
+      font-size: 16px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #5f7cff, #8f6bff);
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 20px rgba(95, 124, 255, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .guesssubmit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(95, 124, 255, 0.6);
+    }
+
+    /* RESULTS */
+    .resultparas {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+      color: #d0d0e6;
+    }
+
+    .resultparas p {
+      margin: 8px 0;
+    }
+
+    .guesses {
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .lastResult {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .lowOrHi {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #ffb86b;
+    }
+    
+    .homeBtn {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  background: linear-gradient(135deg, #5f7cff, #8f6bff);
+  box-shadow: 0 4px 15px rgba(95, 124, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.homeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(95, 124, 255, 0.6);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <a href="index.html" class="homeBtn">Back</a>
+
+
+    <h1>Number Guessing Game</h1>
+    <div class="info">
+      Guess a number between <b>1 and 100</b><br>
+      You have <b>10 attempts</b>
+    </div>
+
+    <div id="guess">Guess the Number</div>
+
+    <form class="form">
+      <input type="text" id="guessField" class="guessField" placeholder="Enter your guess">
+
+      <input type="submit" id="subt" class="guesssubmit" value="Submit Guess">
+    </form>
+
+    <div class="resultparas">
+      <p>Previous guesses: <span class="guesses"></span></p>
+      <p>Guesses remaining: <span class="lastResult">10</span></p>
+      <p class="lowOrHi"></p>
+
+    </div>
+
+</body>
+
+<script src="gtn.js"></script>
+
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Project Name",
+ "url": "https://yourdomain.com"
+}
+</script>
+
+
+</html>
