@@ -2,12 +2,6 @@
 
 An interactive browser-based number guessing game where players try to guess a randomly generated number within limited attempts. The game provides hints after each guess and tracks previous attempts.
 
-🚀 Live Demo
-
-👉 https://your-vercel-url.vercel.app
-
-(Replace with your actual deployed link)
-
 🧠 Project Overview
 
 This project demonstrates core JavaScript concepts such as:
